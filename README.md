@@ -6,7 +6,7 @@
   →https://www.kagoya.jp/howto/it-glossary/develop/github/
 
 ### ・基本操作
-  →https://www.kagoya.jp/howto/it-glossary/deve
+  →https://www.kagoya.jp/howto/it-glossary/develop/howtousegithub/
 
 ### ・Git,GitHubを使った共同開発の流れ
   →https://www.kagoya.jp/howto/it-glossary/develop/howtousegithub/
