@@ -10,3 +10,6 @@
 
 ### ・Git,GitHubを使った共同開発の流れ
   →https://qiita.com/risagon/items/0cd3592b08ee058ffb80
+
+### ・GitHub Desktopの使い方
+  →https://www.kagoya.jp/howto/it-glossary/develop/githubdesktop/
