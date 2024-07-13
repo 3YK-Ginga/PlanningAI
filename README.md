@@ -22,3 +22,5 @@
 ### ・GitHub Desktopの使い方
   →https://www.kagoya.jp/howto/it-glossary/develop/githubdesktop/
 
+  テスト
+
