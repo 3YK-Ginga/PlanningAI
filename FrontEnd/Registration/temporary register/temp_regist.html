@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuta Travel(仮) 会員登録ページ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Yuta Travel(仮) 会員登録</h2>
+        <form action="/complete-registration" method="POST">
+            <div class="form-group">
+                <input type="hidden" id="email" name="email" value="{{email}}" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="ユーザー名" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="パスワード" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="パスワードの確認" required>
+            </div>
+            <button type="submit">会員登録</button>
+        </form>
+        <div class="login-link">
+            <a href="../regist.html">既にアカウントをお持ちですか？ログインはこちら</a>
+        </div>
+    </div>
+</body>
+</html>
