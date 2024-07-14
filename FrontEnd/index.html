@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Yuta Travel(仮)</h2>
+        <h2>Yuta Travel(仮) ログイン</h2>
         <form action="/login" method="POST">
             <div class="form-group">
                 <input type="text" id="username" name="username" placeholder="ID / メールアドレス" required>
@@ -23,16 +23,24 @@
             </div>
         </form>
         <div class="or-container">
-            <span class="or-text"> または各種アカウントで登録 </span>
+            <span class="or-text"> または各種アカウントでログイン </span>
         </div>
         <div class="social-login-buttons">
-            <button class="social-button facebook-button"><i class="fab fa-facebook-f"></i> Facebookでログイン</button>
-            <button class="social-button google-button"><i class="fab fa-google"></i> Googleでログイン</button>
-            <button class="social-button twitter-button"><i class="fab fa-twitter"></i> Twitterでログイン</button>
-            <button class="social-button line-button"><i class="fab fa-line"></i> LINEでログイン</button>
+            <form action="/login-facebook" method="GET">
+                <button type="submit" class="social-button facebook-button"><i class="fab fa-facebook-f"></i> Facebookでログイン</button>
+            </form>
+            <form action="/login-google" method="GET">
+                <button type="submit" class="social-button google-button"><i class="fab fa-google"></i> Googleでログイン</button>
+            </form>
+            <form action="/login-twitter" method="GET">
+                <button type="submit" class="social-button twitter-button"><i class="fab fa-twitter"></i> Twitterでログイン</button>
+            </form>
+            <form action="/login-line" method="GET">
+                <button type="submit" class="social-button line-button"><i class="fab fa-line"></i> LINEでログイン</button>
+            </form>
         </div>
         <div class="register-link">
-            <a href="/register">新規登録はこちら</a>
+            <a href="./Registration/regist.html">新規登録はこちら</a>
         </div>
     </div>
 </body>
