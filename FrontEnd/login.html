@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuta Travel(仮) ログインページ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Yuta Travel(仮) ログイン</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="ID / メールアドレス" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="パスワード" required>
+            </div>
+            <button type="submit">ログイン</button>
+            <div class="forgot-password">
+                <a href="/forgot-password">パスワードを忘れた方はこちら</a>
+            </div>
+        </form>
+        <div class="or-container">
+            <span class="or-text"> または各種アカウントでログイン </span>
+        </div>
+        <div class="social-login-buttons">
+            <form action="/login-facebook" method="GET">
+                <button type="submit" class="social-button facebook-button"><i class="fab fa-facebook-f"></i> Facebookでログイン</button>
+            </form>
+            <form action="/login-google" method="GET">
+                <button type="submit" class="social-button google-button"><i class="fab fa-google"></i> Googleでログイン</button>
+            </form>
+            <form action="/login-twitter" method="GET">
+                <button type="submit" class="social-button twitter-button"><i class="fab fa-twitter"></i> Twitterでログイン</button>
+            </form>
+            <form action="/login-line" method="GET">
+                <button type="submit" class="social-button line-button"><i class="fab fa-line"></i> LINEでログイン</button>
+            </form>
+        </div>
+        <div class="register-link">
+            <a href="./Registration/Registration.html">新規登録はこちら</a>
+        </div>
+    </div>
+</body>
+</html>
