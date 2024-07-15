@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+<<<<<<< Updated upstream
+    min-height: 100vh;
+=======
+    height: 100vh;
+>>>>>>> Stashed changes
+    margin: 0;
+}
+
+.register-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+<<<<<<< Updated upstream
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+>>>>>>> Stashed changes
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+<<<<<<< Updated upstream
+=======
+    width: 100%;
+>>>>>>> Stashed changes
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.or-container {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+<<<<<<< Updated upstream
+=======
+    width: 100%;
+>>>>>>> Stashed changes
+}
+
+.or-container .or-text {
+    background-color: #ffffff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.or-container::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.social-register-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+<<<<<<< Updated upstream
+=======
+    width: 100%;
+>>>>>>> Stashed changes
+}
+
+.social-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.facebook-button {
+    background-color: #3b5998;
+}
+
+.google-button {
+    background-color: #db4437;
+}
+
+.twitter-button {
+    background-color: #1da1f2;
+}
+
+.line-button {
+    background-color: #00c300;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .register-container {
+<<<<<<< Updated upstream
+        width: 50%;
+=======
+        width: 60%;
+>>>>>>> Stashed changes
+        max-width: 600px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .register-container {
+<<<<<<< Updated upstream
+        width: 30%;
+=======
+        width: 40%;
+>>>>>>> Stashed changes
+        max-width: 800px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 14px;
+    }
+}
