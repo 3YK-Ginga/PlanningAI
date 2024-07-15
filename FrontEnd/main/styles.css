@@ -46,6 +46,24 @@ body {
     100% { transform: translateX(-80%); }
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
 .navbar {
     width: 100%;
     background-color: #ffffff;
@@ -167,5 +185,129 @@ body {
 
     .main-button {
         width: 48%;
+    }
+}
+
+/* モーダルウィンドウ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.modal.show {
+    display: flex;
+    animation: slideIn 0.5s forwards;
+}
+
+.modal.hide {
+    animation: slideOut 0.5s forwards;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    max-height: 90%; /* ウィンドウの高さの90% */
+    overflow-y: auto; /* モーダル内でスクロールを許可 */
+    overflow-x: hidden; /* 横スクロールを無効に */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.input-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-button {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 48%;
+}
+
+.main-button:hover {
+    transform: translateY(-3px);
+}
+
+.blue-button {
+    background-color: #42a5f5;
+}
+
+.green-button {
+    background-color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        width: 100%;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .main-button {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
