@@ -46,6 +46,24 @@ body {
     100% { transform: translateX(-80%); }
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
 .navbar {
     width: 100%;
     background-color: #ffffff;
@@ -182,22 +200,16 @@ body {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out; /* スライドアニメーション */
+    align-items: flex-end;
 }
 
 .modal.show {
     display: flex;
-    animation: slideIn 0.5s forwards; /* スライドインアニメーション */
+    animation: slideIn 0.5s forwards;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
+.modal.hide {
+    animation: slideOut 0.5s forwards;
 }
 
 .modal-content {
@@ -209,6 +221,9 @@ body {
     max-width: 600px;
     border-radius: 8px;
     position: relative;
+    max-height: 90%; /* ウィンドウの高さの90% */
+    overflow-y: auto; /* モーダル内でスクロールを許可 */
+    overflow-x: hidden; /* 横スクロールを無効に */
 }
 
 .close-button {
