@@ -78,4 +78,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById("address").value = "エラーが発生しました";
             });
     });
+
+    // 目的地を追加する
+    const addDestinationButton = document.getElementById("add-destination-button");
+    addDestinationButton.addEventListener("click", function() {
+        const destinationContainer = document.getElementById("destination-container");
+        const newSelect = document.querySelector("select[name='destination']").cloneNode(true);
+        newSelect.value = ""; // 初期状態は未選択
+        destinationContainer.appendChild(newSelect);
+    });
 });
