@@ -297,6 +297,16 @@ body {
     background-color: #4CAF50;
 }
 
+.small-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.destination {
+    margin-top: 10px;
+}
+
 @media (max-width: 768px) {
     .form-group {
         width: 100%;
