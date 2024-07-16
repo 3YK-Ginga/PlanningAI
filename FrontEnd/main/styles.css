@@ -297,6 +297,37 @@ body {
     background-color: #4CAF50;
 }
 
+.white-button {
+    background-color: #e7e7e7;
+}
+
+.small-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.destination {
+    margin-top: 10px;
+}
+
+.remove-destination-button {
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.destination-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 @media (max-width: 768px) {
     .form-group {
         width: 100%;
